@@ -18,4 +18,5 @@ card_values = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'A', 'J', 'Q', 'K']
 
 suit = ['hears', 'spades', 'clubs', 'diamonds']
 
-for i in range()
+for i in range(suit_total):
+
