@@ -7,6 +7,8 @@ deck = []
 suit_total = 4
 #hears, spades, clubs, diamonds
 
+card_total = 13 
+
 player_1 = 0
 #first persons score set to 0 
 
@@ -16,3 +18,4 @@ card_values = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'A', 'J', 'Q', 'K']
 
 suit = ['hears', 'spades', 'clubs', 'diamonds']
 
+for i in range()
