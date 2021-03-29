@@ -20,3 +20,4 @@ suit = ['hears', 'spades', 'clubs', 'diamonds']
 
 for i in range(suit_total):
 
+for l in range(card_total):
