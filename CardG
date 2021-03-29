@@ -23,3 +23,5 @@ def deck_cration():
 for i in range(suit_total):
     for l in range(card_total):
         deck.append(cards(l, i))
+
+def cards(value, suit):
