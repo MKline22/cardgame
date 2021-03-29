@@ -20,5 +20,5 @@ suit = ['hears', 'spades', 'clubs', 'diamonds']
 
  global deck
 for i in range(suit_total):
-
-for l in range(card_total):
+    for l in range(card_total):
+        deck.append(cards(l, i))
