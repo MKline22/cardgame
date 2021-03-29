@@ -8,3 +8,6 @@ suit_total = 4
 #hears, spades, clubs, diamonds
 
 player_1 = 0
+#first persons score set to 0 
+
+player_2 = 0
