@@ -2,3 +2,6 @@
 import random
 
 deck = []
+#empty desk list
+
+suit_total = 4
