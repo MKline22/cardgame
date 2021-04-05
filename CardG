@@ -49,3 +49,5 @@ def game_play():
        print("Player 1 has recieved two cards and places them both face down!")
        print("Player 2 has recieved two cards and places them both face down!")
       continue 
+
+      print("You've gone through the entire deck! The game is now over!")
