@@ -50,6 +50,10 @@ def game_play():
        print("Player 2 has recieved two cards and places them both face down!")
       continue 
 
-      print("You've gone through the entire deck! The game is now over!")
-      if player_1 > player_2:
+     print("You've gone through the entire deck! The game is now over!")
+    if player_1 > player_2:
       print("Player 1 is the winner!")
+    elif player_2 < player_1: 
+      print("Player two is the winner!")
+    else: 
+      print("The game is a draw! Play again for a winner!")
