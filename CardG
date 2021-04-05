@@ -26,5 +26,4 @@ def cards(value, suit1):
     suit = ['hears', 'spades', 'clubs', 'diamonds']
     return "{} of {}".format(card_values[value], suit[suit1])
 
-#next splitting cards
-#second commit
+def cardValue(card):
