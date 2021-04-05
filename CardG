@@ -79,3 +79,5 @@ def main():
   print("shuffle deck")
   random.shuffle(card_deck)
   game_play()
+
+    main()
