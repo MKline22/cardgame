@@ -72,3 +72,10 @@ if player_1 > player_2:
   else: 
     print("The game is a draw! Play again for a winner!")
     return False
+
+def main():
+  deck_creation()
+  print("There are ", len(card_deck), " cards initially in the deck!")
+  print("shuffle deck")
+  random.shuffle(card_deck)
+  game_play()
