@@ -58,3 +58,7 @@ def game_play():
       print("Player two is the winner!")
     else: 
       print("The game is a draw! Play again for a winner!")
+
+def winner_check(player_1, player_2):
+  global player_1 #check
+  global player_2
