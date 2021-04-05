@@ -51,3 +51,5 @@ def game_play():
       continue 
 
       print("You've gone through the entire deck! The game is now over!")
+      if player_1 > player_2:
+      print("Player 1 is the winner!")
