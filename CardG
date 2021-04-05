@@ -41,3 +41,6 @@ def game_play():
     first_cardV = cardValue(first_card)
     second_cardV = cardValue(second_card)
     if winner_check(first_cardV, second_cardV):
+    if first_cardV > second_cardV:
+        print("Player 1 has recieved {} cards!\n".format(player_1))
+      elif first_cardV < second_cardV:
