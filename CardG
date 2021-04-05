@@ -15,7 +15,7 @@ player_1 = 0
 player_2 = 0
 
 
-def deck_cration():
+def deck_creation():
  global deck
 for i in range(suit_total):
     for l in range(card_total):
@@ -24,7 +24,7 @@ for i in range(suit_total):
 def cards(value, suit1):
     card_values = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'A', 'J', 'Q', 'K']
     suit = ['hears', 'spades', 'clubs', 'diamonds']
-    return "{} of {}.format(nameValue[value], nameSuit[suit1])
+    return "{} of {}".format(card_values[value], suit[suit1])
 
 #next splitting cards
 #second commit
