@@ -36,3 +36,5 @@ def game_play():
   while len(card_deck) != 0:
     first_card=card_deck.pop()
     second_card=card_deck.pop()
+    print("Player 1: {} ".format(first_card))
+    print("Player 2: {} ".format(second_card))
