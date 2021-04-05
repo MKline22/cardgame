@@ -1,4 +1,5 @@
 #this program will not be finished today
+#code is still not running
 import random
 
 deck = []
