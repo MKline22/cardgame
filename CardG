@@ -38,3 +38,6 @@ def game_play():
     second_card=card_deck.pop()
     print("Player 1: {} ".format(first_card))
     print("Player 2: {} ".format(second_card))
+    first_cardV = cardValue(first_card)
+    second_cardV = cardValue(second_card)
+    if winner_check(first_cardV, second_cardV):
