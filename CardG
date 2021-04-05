@@ -27,5 +27,4 @@ def cards(value, suit1):
     return "{} of {}".format(card_values[value], suit[suit1])
 
 def cardValue(card):
- global card_deck
-for i in range(suit_total):
+ cType = card.split(' ')[0]
