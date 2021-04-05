@@ -62,3 +62,13 @@ def game_play():
 def winner_check(player_1, player_2):
   global player_1 #check
   global player_2
+if player_1 > player_2:
+    player_1 += 2
+    print("Player 1 is t he winner!")
+    return True
+  elif player_1 < player_2:
+    player_2 += 2
+    return True
+  else: 
+    print("The game is a draw! Play again for a winner!")
+    return False
