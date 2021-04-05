@@ -27,3 +27,4 @@ def cards(value, suit1):
     return "{} of {}.format(nameValue[value], nameSuit[suit1])
 
 #next splitting cards
+#second commit
