@@ -1,5 +1,3 @@
-#this program will not be finished today
-#fixing the code
 import random
 
 deck = []
@@ -8,76 +6,102 @@ deck = []
 suit_total = 4
 #hears, spades, clubs, diamonds
 
-card_total = 13 
+card_total = 13
 
 player_1 = 0
-#first persons score set to 0 
+#first persons score set to 0
 
 player_2 = 0
 
 
+def cards(value, suit1):
+    card_values = [
+        '2', '3', '4', '5', '6', '7', '8', '9', '10', 'A', 'J', 'Q', 'K'
+    ]
+    suit = ['hears', 'spades', 'clubs', 'diamonds']
+    return "{} of {}".format(card_values[value], suit[suit1])
+
+
 def deck_creation():
- global deck
+    global deck
+
+
 for i in range(suit_total):
     for l in range(card_total):
         deck.append(cards(l, i))
 
-def cards(value, suit1):
-    card_values = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'A', 'J', 'Q', 'K']
-    suit = ['hears', 'spades', 'clubs', 'diamonds']
-    return "{} of {}".format(card_values[value], suit[suit1])
 
 def cardValue(card):
- cType = card.split(' ')[0] 
- cValue = {'A':1, '2':2, '3':3, '4':4, '5':5,'6':6, '7':7, '8':8, '9':9, '10':10, 'J':11, 'Q':12, 'K':13}
- return cValue[cType]
+    cType = card.split(' ')[0]
+    cValue = {
+        'A': 1,
+        '2': 2,
+        '3': 3,
+        '4': 4,
+        '5': 5,
+        '6': 6,
+        '7': 7,
+        '8': 8,
+        '9': 9,
+        '10': 10,
+        'J': 11,
+        'Q': 12,
+        'K': 13
+    }
+    return cValue[cType]
+
 
 def game_play():
-  global card_deck
-  while len(card_deck) != 0:
-    first_card=card_deck.pop()
-    second_card=card_deck.pop()
-    print("Player 1: {} ".format(first_card))
-    print("Player 2: {} ".format(second_card))
-    first_cardV = cardValue(first_card)
-    second_cardV = cardValue(second_card)
-    if winner_check(first_cardV, second_cardV):
-     if first_cardV > second_cardV:
-        print("Player 1 has recieved {} cards!\n".format(player_1))
-      elif first_cardV < second_cardV:
-        print("Player 2 has recieved {} cards!\n".format(player_2))
-      else: 
-       print("Player 1 has recieved two cards and places them both face down!")
-       print("Player 2 has recieved two cards and places them both face down!")
-      continue 
+    global card_deck
+    while len(card_deck) != 0:
+        first_card = card_deck.pop()
+        second_card = card_deck.pop()
+        print("Player 1: {} ".format(first_card))
+        print("Player 2: {} ".format(second_card))
+        first_cardV = cardValue(first_card)
+        second_cardV = cardValue(second_card)
+        if winner_check(first_cardV, second_cardV):
+            if first_cardV > second_cardV:
+                print("Player 1 has recieved {} cards!\n".format(player_1))
+            elif first_cardV < second_cardV:
+                print("Player 2 has recieved {} cards!\n".format(player_2))
+            else:
+                print(
+                    "Player 1 has recieved two cards and places them both face down!"
+                )
+                print(
+                    "Player 2 has recieved two cards and places them both face down!"
+                )
+            continue
 
-     print("You've gone through the entire deck! The game is now over!")
+    print("You've gone through the entire deck! The game is now over!")
     if player_1 > player_2:
-      print("Player 1 is the winner!")
-    elif player_2 < player_1: 
-      print("Player two is the winner!")
-    else: 
-      print("The game is a draw! Play again for a winner!")
+        print("Player 1 is the winner!")
+    elif player_2 < player_1:
+        print("Player two is the winner!")
+    else:
+        print("The game is a draw! Play again for a winner!")
+
 
 def winner_check(player_1, player_2):
-  global player_1 #check
-  global player_2
+    player_1  #check
+    player_2
+
+
 if player_1 > player_2:
     player_1 += 2
     print("Player 1 is t he winner!")
-    return True
-  elif player_1 < player_2:
+
+elif player_1 < player_2:
     player_2 += 2
-    return True
-  else: 
+else:
     print("The game is a draw! Play again for a winner!")
-    return False
+
 
 def main():
-  deck_creation()
-  print("There are ", len(card_deck), " cards initially in the deck!")
-  print("shuffle deck")
-  random.shuffle(card_deck)
-  game_play()
-
+    deck_creation()
+    print("There are ", len(card_deck), " cards initially in the deck!")
+    print("shuffle deck")
+    random.shuffle(card_deck)
+    game_play()
     main()
